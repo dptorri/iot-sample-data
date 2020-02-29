@@ -4,3 +4,14 @@
     width: 25%;
     height: calc(100vh - 80px);
 }
+
+
+@media (min-width: 1200px) {
+    .sidenav { width: 25%;}
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+  
+    .sidenav { width: 50%;}
+    
+  }
