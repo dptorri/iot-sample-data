@@ -1,0 +1,6 @@
+.sidenav {
+    background-color: lightblue;
+    border: 1px solid black;
+    width: 25%;
+    height: calc(100vh - 80px);
+}
