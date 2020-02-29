@@ -8,6 +8,7 @@ function Sidenav( props ) {
   return (
     <div className="sidenav">
         <span>{ title ? title : 'Sidenav content' }</span>
+        <h4>Overview</h4>
         <ul>
           {content.map((i) => 
             <li key={i.id}>

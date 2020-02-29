@@ -1,7 +1,9 @@
 import React from 'react';
 import Sidenav from './components/Sidenav';
 import Header from './components/Header';
-// import data from '../src/messages';
+import Dashboard from './components/Dashboard';
+import './App.css';
+
 /***
  * TODO:
  * 
@@ -12,28 +14,35 @@ import Header from './components/Header';
  *
  *
  */
-// const data = [
-//   {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
-//   {id: 2, title: 'Installation', content: 'You can install React from npm.'}];
 
 const headerTitle = 'Header Title Custom';
 const sidenavTitle = 'sidenav Title Custom';
 
 const sidenavContent = [
-  {id: 1, label: 'label1'},
-  {id: 2, label: 'label2'}
+  {id: 1, label: 'Sector 1'},
+  {id: 2, label: 'Sector 2'},
+  {id: 3, label: 'Sector 3'}
 ];
 
 function App() {
   return (
     <div className="App">
+      
+      {/* Header */}
       <Header 
         title={headerTitle}
       />
-      <Sidenav
-        title={sidenavTitle}
-        content={sidenavContent}
-      />
+    
+      <div className="flex-container">
+
+        {/* Sidenav */}
+        <Sidenav
+          title={sidenavTitle}
+          content={sidenavContent}
+        />
+        {/* Dashboard */}
+        <Dashboard />
+      </div>
     </div>
   );
 }
