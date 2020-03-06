@@ -1,5 +1,7 @@
 import React from 'react';
 import './sidenav.scss';
+import { ReactComponent as Logo } from '../../assets/images/logo.svg';
+
 
 function Sidenav( props ) {
   let content = props.content;
@@ -7,6 +9,9 @@ function Sidenav( props ) {
 
   return (
     <div className="sidenav">
+        <Logo
+          className="logo-wrapper" 
+        />
         <span>{ title ? title : 'Sidenav content' }</span>
         <h4>Overview</h4>
         <ul>
