@@ -1,5 +1,5 @@
 import React from 'react';
-import './sidenav.css';
+import './sidenav.scss';
 
 function Sidenav( props ) {
   let content = props.content;

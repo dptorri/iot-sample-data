@@ -1,7 +1,6 @@
 import React from 'react';
-import Sidenav from './components/Sidenav';
-import Header from './components/Header';
-import Dashboard from './components/Dashboard';
+import Sidenav from './components/sidenav/Sidenav';
+import Dashboard from './components/dashboard/Dashboard';
 import './App.css';
 
 /***
@@ -15,7 +14,6 @@ import './App.css';
  *
  */
 
-const headerTitle = 'Header Title Custom';
 const sidenavTitle = 'sidenav Title Custom';
 
 const sidenavContent = [
@@ -29,10 +27,6 @@ function App() {
     <div className="App">
       
       {/* Header */}
-      <Header 
-        title={headerTitle}
-      />
-    
       <div className="flex-container">
 
         {/* Sidenav */}
